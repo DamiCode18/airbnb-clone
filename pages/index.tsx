@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-4xl">God abeg o!!!</h1>
+      <h1 className="text-4xl">Airbnb Clone</h1>
     </div>
   )
 }
