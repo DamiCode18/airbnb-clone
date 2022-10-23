@@ -12,18 +12,17 @@ return(
 <Fragment>
 <div className="flex">
 {menus.map((menu, i)=>(
-    <div className="m-2 p-2">  
+    <div className="m-2 p-2" key={i}>  
    <Image src={menu.icon} alt="menu" width={24} height={24} />
    <p className="text-xs">{menu.title}</p>
    </div>
 ))}
 </div>
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-2">
-{images.map(x=>(
-    <div>
+{images.map((x,i)=>(
+    <div key={i}>
     <Carousel  
     showThumbs={false}
-    key={x.title}
     showArrows={true} 
     showStatus={false} 
     showIndicators={true} 
