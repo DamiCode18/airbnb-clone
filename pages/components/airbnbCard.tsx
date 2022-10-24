@@ -10,9 +10,9 @@ const Card = (srcImage: Images) => {
         <Fragment>
             <div>
                 <Image 
-                    width={500}
-                    height={400}
-                    className="rounded-lg"
+                    width={348}
+                    height={331}
+                    className="rounded-xl"
                     src={srcImage.srcImage}
                     alt="card"
                     />
