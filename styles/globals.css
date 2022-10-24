@@ -18,6 +18,13 @@ a {
 * {
   box-sizing: border-box;
 }
+.carousel.carousel-slider .control-arrow {
+  padding: 0 !important;
+  background: none !important;
+  margin: auto !important;
+  height: 3px !important;
+
+}
 
 @media (prefers-color-scheme: dark) {
   html {

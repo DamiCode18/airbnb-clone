@@ -10,7 +10,7 @@ const Rooms=()=>{
 // const useImages = images.sort(() => Math.random() - 0.5);
 return(
 <Fragment>
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:mx-12 mx-6">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6  gap-4 lg:mx-12 mx-6">
 {images.map((x,i)=>(
     <div key={i}>
     <Carousel  
@@ -18,17 +18,20 @@ return(
     showArrows={true} 
     showStatus={false} 
     showIndicators={true} 
-    stopOnHover 
+    emulateTouch={true}
     thumbWidth={40}>
     {x?.image?.map(y=>(
         <Card key={y} srcImage={y}/>
     ))}
     </Carousel>
-    <div className="mx-3">
-    <div className="flex justify-between"><div className="text-sm font-bold">{x.location}</div><p><Image src="https://cdn-icons-png.flaticon.com/128/929/929495.png" height={10} width={10} /><span className="ml-1">{x.star_rating}</span></p></div>
+    <div className="mx-15 mx-3 max-w-xs">
+    <div className="flex justify-between items-center">
+    <div className="text-sm font-bold">{x.location}</div>
+    <p><Image src="https://cdn-icons-png.flaticon.com/128/929/929495.png" height={10} width={10} /><span className="ml-1">{x.star_rating}</span></p>
+    </div>
     <div className="text-sm font-light">San Felipe</div>
     <div className="text-sm font-light">{x.date}</div>
-    <div className="text-sm font-bold">{x.price}</div>
+    <div className="text-sm font-bold">{x.price} <span className="font-light">night</span></div>
     </div>
      </div>
 ))}    
