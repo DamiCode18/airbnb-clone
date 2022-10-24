@@ -15,6 +15,7 @@ const Card = (srcImage: Images) => {
                     className="rounded-xl"
                     src={srcImage.srcImage}
                     alt="card"
+                    objectFit="cover"
                     />
             </div>
         </Fragment>

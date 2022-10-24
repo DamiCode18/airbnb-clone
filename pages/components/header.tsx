@@ -4,9 +4,9 @@ import { menus } from "../api/data";
 const Header = () => {
     return (
         <header className="sticky top-0 z-50 bg-white">
-            <div className="grid grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 p-5 md:px-20 items-center">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 p-5 md:px-20 items-center">
                 {/* Left */}
-                <div className="hidden lg:inline-flex relative flex items-center h-8">
+                <div className="hidden lg:inline-flex relative items-center h-8">
                     <Image
                         layout="fill"
                         src="https://links.papareact.com/qd3"
@@ -23,8 +23,8 @@ const Header = () => {
                     <span className="hidden md:inline-flex border-r-2 md:px-4 w-max text-sm text-gray-900">Any week</span>
                     <span className="inline-flex">
                         <input className="outline-none pl-5 bg-transparent py-2 text-sm text-gray-600 placeholder-gray-400" type="text" placeholder="Add guests" />
-                        <svg className="bg-red-400 h-8 rounded-full p-2 hidden md:inline-flex md:mx-2" color="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path fill="#f87171" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        <svg className="bg-red-400 h-8 rounded-full p-2 hidden md:inline-flex md:mx-2" color="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                            <path fill="#f87171" strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                         </svg>
                     </span>
                 </div>

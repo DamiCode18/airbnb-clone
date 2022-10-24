@@ -6,8 +6,6 @@ import { images } from "../api/data";
 import Image from "next/image";
 
 const Rooms=()=>{
-// const arr = Array(20).fill(0).map((x,i)=>i+1);
-// const useImages = images.sort(() => Math.random() - 0.5);
 return(
 <Fragment>
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6  gap-4 lg:mx-12 mx-6">
@@ -27,7 +25,7 @@ return(
     <div className="mx-15 mx-3 max-w-xs">
     <div className="flex justify-between items-center">
     <div className="text-sm font-bold">{x.location}</div>
-    <p><Image src="https://cdn-icons-png.flaticon.com/128/929/929495.png" height={10} width={10} /><span className="ml-1">{x.star_rating}</span></p>
+    <p><Image alt="img" src="https://cdn-icons-png.flaticon.com/128/929/929495.png" height={10} width={10} /><span className="ml-1">{x.star_rating}</span></p>
     </div>
     <div className="text-sm font-light">San Felipe</div>
     <div className="text-sm font-light">{x.date}</div>
