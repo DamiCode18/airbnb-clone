@@ -16,7 +16,6 @@ return(
     showArrows={true} 
     showStatus={false} 
     showIndicators={true} 
-    emulateTouch={true}
     thumbWidth={40}>
     {x?.image?.map(y=>(
         <Card key={y} srcImage={y}/>
